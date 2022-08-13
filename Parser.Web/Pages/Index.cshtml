@@ -1,0 +1,53 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <input type="file" asp-for="Upload" />
+    <input type="submit" asp-page-handler="Upload"/>
+</form>
+<form method="post">
+    <input type="submit" asp-page-handler="Cancel" value="Cancel" />
+</form>
+<div class="row">
+    <div class="col-3">Default Parser: @Model.DefaultParser</div>
+    <div class="col-3">Memory Parser: @Model.MemoryParser</div>
+</div>
+<div class="card">
+    <div class="card-header">
+        Words Counts
+    </div>
+    <div class="card-body">
+        <h5 class="card-title"></h5>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Row</th>
+                        <th scope="col">Word</th>
+                        <th scope="col">
+                            <a asp-page="./Index" asp-route-sortOrder="@Model.CountSort">
+                                Count
+                            </a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (IndexModel.WordsWithCount != null)
+                    {
+                        @foreach (var item in IndexModel.WordsWithCount.Select((word, i) => (word, i)))
+                        {
+                            <tr>
+                                <th scope="row">@(item.i+1)</th>
+                                <td>@item.word.Key</td>
+                                <td>@item.word.Value</td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

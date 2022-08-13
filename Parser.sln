@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser.Web", "Parser.Web\Parser.Web.csproj", "{DD093B05-087B-4CED-8905-3881B426FEC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser.FileParser", "Parser.FileParser\Parser.FileParser.csproj", "{D035DB93-C395-43DF-9A96-077362F42783}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD093B05-087B-4CED-8905-3881B426FEC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD093B05-087B-4CED-8905-3881B426FEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD093B05-087B-4CED-8905-3881B426FEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD093B05-087B-4CED-8905-3881B426FEC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D035DB93-C395-43DF-9A96-077362F42783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D035DB93-C395-43DF-9A96-077362F42783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D035DB93-C395-43DF-9A96-077362F42783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D035DB93-C395-43DF-9A96-077362F42783}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48F2682E-642A-45BA-89B6-D1347D0EEF34}
+	EndGlobalSection
+EndGlobal
